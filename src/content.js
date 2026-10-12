@@ -2,7 +2,7 @@
 // TODO: replace placeholder phone/email before launch.
 export const CONTACT = {
   phone: '(000) 000-0000',
-  email: 'hello@chloenguyentax.com',
+  email: 'chloenguyen2048@gmail.com',
   area: 'Katy & Greater Houston, TX',
 }
 
