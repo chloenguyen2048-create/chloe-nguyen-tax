@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { content, CONTACT } from './content.js'
+import logoMark from './assets/logo-mark.png'
+import logoFull from './assets/logo-full.png'
 
 const ICONS = {
   person: <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0" />,
@@ -60,10 +62,10 @@ export default function App() {
       <header className="header">
         <div className="container header-inner">
           <a href="#top" className="brand" aria-label="Chloe Nguyen Tax Advisory">
-            <span className="brand-mark">CN</span>
+            <img src={logoMark} alt="" className="brand-mark" width="40" height="42" />
             <span className="brand-text">
               <strong>Chloe Nguyen</strong>
-              <small>Tax Advisory</small>
+              <small>Tax &amp; Advisory</small>
             </span>
           </a>
 
@@ -228,6 +230,7 @@ export default function App() {
 
       <footer className="footer">
         <div className="container footer-inner">
+          <img src={logoFull} alt="Chloe Nguyen Tax & Advisory" className="footer-logo" width="220" />
           <span>© {new Date().getFullYear()} Chloe Nguyen Tax LLC. {t.footer.rights}</span>
           <span className="muted">{t.footer.note}</span>
         </div>
